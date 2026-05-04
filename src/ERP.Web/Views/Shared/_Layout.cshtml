@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ERP System</title>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+    <!-- Main Navigation Bar -->
+    <nav class="top-nav">
+        <div class="nav-brand">
+            <a href="/Dashboard" style="color: white; text-decoration: none; font-size: 1.5rem;">ERP System</a>
+        </div>
+        <div class="nav-links">
+            @if (User.Identity?.IsAuthenticated == true)
+            {
+                <a href="/Dashboard">Dashboard</a>
+                <a href="/Customers">Customers</a>
+                <a href="/Products">Products</a>
+                <a href="/Orders">Orders</a>
+                <a href="/Account/Logout">Logout (@User.Identity.Name)</a>
+            }
+            else
+            {
+                <a href="/Account/Login">Login</a>
+            }
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

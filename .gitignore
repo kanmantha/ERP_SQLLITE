@@ -1,0 +1,21 @@
+# Ignore build outputs
+/bin/
+/obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# SQLite database files
+*.db
+erp.db
+ERP.db
+
+# User-specific and IDE files
+.DS_Store
+.vscode/
+.vs/
+*.user
+.idea/
+.classpath
+.project

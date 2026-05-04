@@ -1,0 +1,22 @@
+@model ERP.Web.ViewModels.DashboardViewModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<div class="dashboard-grid">
+    <div class="card customers">
+        <h3>Total Customers</h3>
+        <div class="value">@Model.TotalCustomers</div>
+    </div>
+    <div class="card products">
+        <h3>Total Products</h3>
+        <div class="value">@Model.TotalProducts</div>
+    </div>
+    <div class="card orders">
+        <h3>Total Orders</h3>
+        <div class="value">@Model.TotalOrders</div>
+    </div>
+    <div class="card revenue">
+        <h3>Total Revenue</h3>
+        <div class="value">@Model.Revenue.ToString("C")</div>
+    </div>
+</div>
