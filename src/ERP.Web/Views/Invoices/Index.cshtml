@@ -1,0 +1,39 @@
+@model IEnumerable<ERP.Web.Models.Invoice>
+@{ ViewData["Title"] = "Manage Invoices"; }
+<h2>Invoice Management</h2>
+<p><a asp-action="Create" class="btn btn-primary">Generate New Invoice</a></p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Invoice No</th>
+            <th>Customer</th>
+            <th>Date</th>
+            <th>Due Date</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td><strong>@item.InvoiceNo</strong></td>
+                <td>@item.Customer.Name</td>
+                <td>@item.InvoiceDate.ToShortDateString()</td>
+                <td>@item.DueDate.ToShortDateString()</td>
+                <td>@item.Amount.ToString("C")</td>
+                <td><span class="badge @(item.Status == "Paid" ? "bg-success" : "bg-warning")">@item.Status</span></td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">View</a> |
+                    @if(item.Status != "Paid") {
+                        <form asp-action="MarkPaid" asp-route-id="@item.Id" style="display:inline;">
+                            <button type="submit" style="border:none;background:none;color:blue;cursor:pointer;">Mark Paid</button>
+                        </form>
+                    }
+                    | <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

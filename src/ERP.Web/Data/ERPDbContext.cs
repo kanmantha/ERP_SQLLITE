@@ -10,6 +10,9 @@ namespace ERP.Web.Data {
     public DbSet<Product> Products { get; set; }
     public DbSet<Order> Orders { get; set; }
     public DbSet<OrderItem> OrderItems { get; set; }
+    public DbSet<Supplier> Suppliers { get; set; }
+    public DbSet<Invoice> Invoices { get; set; }
+    public DbSet<StockMovement> StockMovements { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

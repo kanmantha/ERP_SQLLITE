@@ -1,0 +1,41 @@
+@model ERP.Web.Models.Invoice
+@{ ViewData["Title"] = "Invoice Details"; }
+<h2>Invoice Details</h2>
+<div class="card" style="padding: 2rem; border: 1px solid #ddd;">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Invoice: @Model.InvoiceNo</h3>
+            <p>Status: <span class="badge @(Model.Status == "Paid" ? "bg-success" : "bg-warning")">@Model.Status</span></p>
+        </div>
+        <div class="col-md-6 text-end">
+            <p>Date: @Model.InvoiceDate.ToShortDateString()</p>
+            <p>Due Date: @Model.DueDate.ToShortDateString()</p>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <strong>Customer:</strong><br/>
+            @Model.Customer.Name
+        </div>
+        <div class="col-md-6 text-end">
+            <strong>Total Amount:</strong>
+            <h2 style="color: #27ae60;">@Model.Amount.ToString("C")</h2>
+        </div>
+    </div>
+    @if(Model.Order != null) {
+        <hr />
+        <h4>Related Order #@(Model.Order.Id)</h4>
+        <table class="table table-sm">
+            <tr><th>Order Date</th><td>@Model.Order.OrderDate.ToShortDateString()</td></tr>
+        </table>
+    }
+</div>
+<div style="margin-top: 1rem;">
+    @if(Model.Status != "Paid") {
+        <form asp-action="MarkPaid" asp-route-id="@Model.Id" style="display:inline;">
+            <button type="submit" class="btn btn-success">Mark as Paid</button>
+        </form>
+    }
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</div>

@@ -1,0 +1,36 @@
+@model ERP.Web.Models.Invoice
+@{ ViewData["Title"] = "Generate Invoice"; }
+<h2>Generate New Invoice</h2>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div class="form-group">
+                <label>Link to Existing Order (Optional)</label>
+                <select name="OrderId" class="form-control" asp-items="ViewBag.OrderId">
+                    <option value="">-- Select Order --</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerId"></label>
+                <select asp-for="CustomerId" class="form-control" asp-items="ViewBag.CustomerId"></select>
+            </div>
+            <div class="form-group">
+                <label>Invoice Date</label>
+                <input name="invoiceDateString" class="form-control" type="date" value="@Model.InvoiceDate.ToString("yyyy-MM-dd")" />
+            </div>
+            <div class="form-group">
+                <label asp-for="DueDate"></label>
+                <input name="dueDateString" class="form-control" type="date" value="@Model.DueDate.ToString("yyyy-MM-dd")" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Status"></label>
+                <select asp-for="Status" class="form-control">
+                    <option value="Pending">Pending</option>
+                    <option value="Paid">Paid</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Invoice</button>
+            <a asp-action="Index" class="btn btn-secondary">Back</a>
+        </form>
+    </div>
+</div>

@@ -50,6 +50,34 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[G:/APPLICATIONS_BUILT_OPENCODE/ERP_SQLLITE_APP/src/ERP.Web/Views/Inventory/AddMovement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEFkZE1vdmVtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/APPLICATIONS_BUILT_OPENCODE/ERP_SQLLITE_APP/src/ERP.Web/Views/Inventory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/APPLICATIONS_BUILT_OPENCODE/ERP_SQLLITE_APP/src/ERP.Web/Views/Inventory/Movements.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XE1vdmVtZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/APPLICATIONS_BUILT_OPENCODE/ERP_SQLLITE_APP/src/ERP.Web/Views/Invoices/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/APPLICATIONS_BUILT_OPENCODE/ERP_SQLLITE_APP/src/ERP.Web/Views/Invoices/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/APPLICATIONS_BUILT_OPENCODE/ERP_SQLLITE_APP/src/ERP.Web/Views/Invoices/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/APPLICATIONS_BUILT_OPENCODE/ERP_SQLLITE_APP/src/ERP.Web/Views/Invoices/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [G:/APPLICATIONS_BUILT_OPENCODE/ERP_SQLLITE_APP/src/ERP.Web/Views/Orders/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -92,6 +120,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [G:/APPLICATIONS_BUILT_OPENCODE/ERP_SQLLITE_APP/src/ERP.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/APPLICATIONS_BUILT_OPENCODE/ERP_SQLLITE_APP/src/ERP.Web/Views/Suppliers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/APPLICATIONS_BUILT_OPENCODE/ERP_SQLLITE_APP/src/ERP.Web/Views/Suppliers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/APPLICATIONS_BUILT_OPENCODE/ERP_SQLLITE_APP/src/ERP.Web/Views/Suppliers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/APPLICATIONS_BUILT_OPENCODE/ERP_SQLLITE_APP/src/ERP.Web/Views/Suppliers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [G:/APPLICATIONS_BUILT_OPENCODE/ERP_SQLLITE_APP/src/ERP.Web/Views/_ViewImports.cshtml]
